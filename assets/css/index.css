@@ -185,7 +185,7 @@ body, html {
 
   83% {
     opacity: 0;
-    display:flex;
+    display: none;
   }
 }
 
