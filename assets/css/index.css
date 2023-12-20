@@ -58,6 +58,16 @@
     }
 }
 
+@keyframes total {
+    0% {
+        transform: translateY(20%);
+    }
+    
+    83% {
+        transform: translateY(20%);
+    }
+}
+
 body,
 html {
     margin: 0;
@@ -67,9 +77,16 @@ html {
 
 body {
     height: 100vh;
+    /* min-height: max-content; */
     width: 100vw;
-    min-height: max-content;
-    background: url('../image/background2.png') center/cover no-repeat;
+    overflow: hidden;
+    background: url('../image/background2.png') center/cover;
+}
+
+body>section {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,9 +94,10 @@ body {
 
 .background {
     position: relative;
-    height: 100%;
     width: 100%;
+    padding: 1vw;
     color: white;
+    animation: total 6s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +129,7 @@ body {
     position: absolute;
     width: 600px;
     top: 7rem;
-    animation: appearFromLeft 1.5s ease-out 2.5s forwards;
+    animation: appearFromLeft 1s ease-out 2.5s forwards;
 }
 
 .desc {
