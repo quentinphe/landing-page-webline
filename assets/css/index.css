@@ -180,12 +180,12 @@ body, html {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    display : none;
+    height: 0
   }
 
   83% {
     opacity: 0;
-    display: none;
+    height: 0
   }
 }
 
